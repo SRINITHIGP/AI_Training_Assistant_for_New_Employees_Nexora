@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Training Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+
+            <div>
+                <h1>Nexora Training Assistant</h1>
+                <p>Your AI onboarding and training companion</p>
+            </div>
+
+            <button id="new-chat-button">
+                New Chat
+            </button>
+
+        </header>
+
+        <main id="chat-box" class="chat-box">
+
+            <div class="message assistant-message">
+                <p>
+                    Hello! 👋 Welcome to Nexora.<br>
+                    I'm the Nexora Training Assistant, your AI onboarding and training companion.
+                    I can help you with company information, role-specific guidance,
+                    employee policies, and onboarding processes.<br><br>
+                    How can I help you today?
+                </p>
+            </div>
+
+        </main>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="question-input"
+                placeholder="Ask a company-related question..."
+            >
+
+            <button id="send-button">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>

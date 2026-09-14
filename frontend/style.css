@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 800px;
+    height: 90vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #1f4e79;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-header h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.chat-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 75%;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+.assistant-message {
+    background: #eef2f6;
+    align-self: flex-start;
+}
+
+.user-message {
+    background: #1f4e79;
+    color: white;
+    margin-left: auto;
+}
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+}
+
+#question-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#send-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #1f4e79;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#send-button:hover {
+    background: #163a5c;
+}
+
+.assistant-text {
+    line-height: 1.6;
+}
+
+.assistant-text strong {
+    font-weight: 600;
+}
+
+.list-item {
+    margin: 6px 0;
+    padding-left: 4px;
+}
+
+.bullet-item {
+    margin: 6px 0;
+    padding-left: 4px;
+}
+
+.paragraph-break {
+    height: 8px;
+}
+
+
+/* --------------------------------------------------
+   Follow-up suggestions
+-------------------------------------------------- */
+
+.followup-container {
+    margin: 8px 0 18px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.followup-heading {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.followup-button {
+    align-self: flex-start;
+    padding: 9px 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 18px;
+    background: #ffffff;
+    color: #333;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.followup-button:hover {
+    background: #f5f5f5;
+    border-color: #aaa;
+}
+
+.followup-button:active {
+    transform: scale(0.98);
+}
+
+
+/* --------------------------------------------------
+   New Chat button
+-------------------------------------------------- */
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+#new-chat-button {
+    padding: 8px 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+    background: #ffffff;
+    color: #333;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+#new-chat-button:hover {
+    background: #f5f5f5;
+    border-color: #aaa;
+}
+
+#new-chat-button:active {
+    transform: scale(0.97);
+}

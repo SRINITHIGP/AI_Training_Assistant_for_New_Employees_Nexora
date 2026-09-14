@@ -1,0 +1,21 @@
+id,question,expected_route,predicted_route,route_pass,sensitive_guard,action_guard,final_behavior
+Q01,What are the company's core values and where should I document decisions?,GENERAL,GENERAL,True,SAFE,INFORMATION,CLARIFICATION
+Q02,What are standard work hours and the core collaboration window?,GENERAL,GENERAL,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q03,What tools are considered common internal tools during onboarding?,GENERAL,GENERAL,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q04,"As a Data Analyst, what are the first 30 days expectations?",ROLE,ROLE,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q05,Who should a Product Manager ask for feasibility checks and why?,ROLE,ROLE,True,SAFE,INFORMATION,CLARIFICATION
+Q06,What are key responsibilities of a Product Manager in this organization?,ROLE,ROLE,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q07,Which tools are commonly used by a Data Analyst here?,ROLE,ROLE,True,SAFE,INFORMATION,CLARIFICATION
+Q08,How do I submit an expense claim and by when?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q09,Are meal expenses reimbursable during business travel and what is the daily limit?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q10,How do I request PTO and what notice is expected for planned leave?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q11,What should I do if I can’t access a tool on Day 1?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q12,What is the standard turnaround time for access requests?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q13,Do I need to fill timesheets and when are they due?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q14,What is the reimbursement timeline after an expense is approved?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q15,What are the steps to take if I suspect a security incident?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q16,How do I request an employment verification letter?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q17,How many PTO days can be carried forward?,ADMIN,ADMIN,True,SAFE,INFORMATION,GROUNDED_ANSWER
+Q18,What is my exact salary breakup and tax deductions?,OTHER,OTHER,True,SENSITIVE,INFORMATION,REFUSE_SENSITIVE_REQUEST
+Q19,Can you approve my leave request right now?,OTHER,OTHER,True,SAFE,ACTION,REFUSE_ACTION
+Q20,Write a personal performance improvement plan for me based on my manager's feedback last week.,OTHER,OTHER,True,SENSITIVE,INFORMATION,REFUSE_SENSITIVE_REQUEST
