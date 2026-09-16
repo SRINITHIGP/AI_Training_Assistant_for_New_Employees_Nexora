@@ -94,6 +94,12 @@ AI_Training_Assistant_for_New_Employees_Nexora/
 │   ├── guardrail_results.csv
 │   └── end_to_end_results.csv
 
+├── screenshots/
+│   ├── 01_welcome.png
+│   ├── 02_core_values.png
+│   ├── 03_data_analyst_tools.png
+│   └── 04_out_of_scope.png
+
 ├── .env
 ├── requirements.txt
 └── README.md
@@ -245,29 +251,47 @@ Suggestions must be:
 - Free from unsupported assumptions.
 - Non-sensitive and non-action-based.
 
-## Limitations
+## Project Scope
 
-This is a prototype using a small synthetic company dataset.
+- Designed as a focused **employee onboarding and training assistant** for Nexora.
+- Uses a curated company knowledge base covering **company information, roles, policies and administrative processes**.
+- Implements **query classification, routing, RAG-based retrieval and grounded response generation**.
+- Includes **conversation context, ambiguity handling, scope control and contextual follow-up suggestions**.
+- Evaluated using a structured set of employee questions to validate routing, retrieval, response quality and guardrails.
 
-It does not currently include:
+### **Beyond Current Scope**
 
-- Live HR/payroll/IT integrations
-- Authentication or authorization
-- Production deployment
-- Persistent enterprise conversation storage
-- Real employee records
-- Ability to perform employee actions
+- Authentication, role-based access and workflow execution can be added when connecting the assistant to organizational systems.
+- The current knowledge base is curated; automated enterprise knowledge synchronization is a natural next step.
 
-## Future Improvements
+### **Future Enhancements**
 
-- Add more roles and departments.
-- Connect approved enterprise knowledge sources.
-- Add document upload and automatic indexing.
-- Improve retrieval with reranking/hybrid search.
-- Add authentication and role-based access control.
-- Integrate controlled HR/IT workflows.
-- Add usage and knowledge-gap analytics.
-- Deploy internally.
+- **Automate Knowledge Updates** — Enable document upload, indexing and scheduled knowledge refresh.
+- **Improve Retrieval** — Introduce hybrid search and reranking for larger knowledge bases.
+- **Access Control** — Add authentication and role-based access based on employee permissions.
+- **Analytics** — Track frequently asked questions and identify knowledge gaps.
+- **Internal Deployment** — Move from the prototype environment to an organization's internal platform.
+
+## Chatbot Screenshots
+
+### Welcome Screen
+
+![Nexora Training Assistant welcome screen](screenshots/01_welcome.png)
+
+### Company Information — Core Values
+
+![Nexora core values response](screenshots/02_core_values.png)
+
+### Role-Specific Guidance — Data Analyst
+
+![Data Analyst tools response](screenshots/03_data_analyst_tools.png)
+
+### Out-of-Scope Request Handling
+
+![Out-of-scope request refusal](screenshots/04_out_of_scope.png)
+
+
+
 
 ## Project Purpose
 
